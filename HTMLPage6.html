@@ -1,0 +1,18 @@
+﻿$(document).ready(function () {
+    $("#exit").click(function () {
+        //setTimeout(function () { window.close() }, 3000);
+        $("#fadeout").fadeOut(2000);
+        $("#goodbye").fadeIn(2000);
+    });
+});
+
+var newresult, x;
+
+
+
+function clearSelection() {
+    document.getElementById("celbtn").checked = false;
+    document.getElementById("ferbtn").checked = false;
+    document.getElementById("tempinput").value = "";
+    document.getElementById("results").innerHTML = "";
+}

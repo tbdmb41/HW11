@@ -1,0 +1,39 @@
+﻿/*<!DOCTYPE html>
+    <title>Homework 11</title>
+</head> */
+
+
+<style>
+'*' {font-family:Cambria, Arial, Times New Roman;
+   color: #605858}
+</style>
+    
+body{
+    position:absolute;
+}
+    p.goodbye{
+        display:none;
+        position: absolute;
+    }
+
+
+.checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+
+body {
+    opacity: 1;
+    transition: 2.5s opacity;
+    position: absolute;
+}
+
+    body.fade {
+        opacity: 35;
+        transition: none;
+    }

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="javascript" href="C:\Users\ClevelandCodes\Desktop\Index\HW11\hw11.js" />
+    <link rel="text/stylesheet" href="C:\Users\ClevelandCodes\Desktop\Index\HW11\HW11.css" />
+</head>
+
+
+
+<p>Please choose your desired measure of temperature</p>
+
+<body>
+    <h2>Homework 11</h2>
+    <style>
+        body {
+            background-color: mediumspringgreen;
+        }
+    </style>
+
+    <label class="container">
+        Farenheit
+        <input type="radio" name="radio">
+    </label>
+    Celsius
+    <input type="radio" name="radio">
+    <script>
+        function clearSelection() {
+            document.getElementById("c") = true;
+            document.getElementById("f") = true;
+         {
+    </script>
+
+    <form action="/action_page.php">
+        <p><input id="c" onkeyup="convert('C')" placeholder="Celsius"> Degrees Celsius</p>
+        <p><input id="f" onkeyup="convert('F')" placeholder="Farenheit"> Degrees Fahrenheit</p>
+    </form>
+
+    <textarea id="TextArea1" rows="20" cols="30" placeholder="Do I need a sweater today? Or will a t-shirt suffice? You tell me!"></textarea>
+    <br />
+    <br />
+
+    <form action="/action_page.php">
+        <input type="reset" value="Try Again">
+        <button onclick="myFunction()">Exit</button>
+        <script>
+            function myFunction() {
+                alert("Take care polar bear!");
+            }
+        </script>
+    </form>
+
+    <script>
+        function convert(degree) {
+            var x;
+            if (degree == "C") {
+                x = document.getElementById("c").value * 9 / 5 + 32;        /*this is on the HW11.js page too*/
+                document.getElementById("f").value = Math.round(x);
+            } else {
+                x = (document.getElementById("f").value - 32) * 5 / 9;
+                document.getElementById("c").value = Math.round(x);
+            }
+        }
+    </script>
+
+
+    <script>
+        function fadeOutEffect() {
+            var fadeTarget = document.getElementById("Exit");
+            var fadeEffect = setInterval(function () {
+                if (!fadeTarget.style.opacity) {
+                    fadeTarget.style.opacity = 10;
+                } else {
+                if (fadeTarget.style.opacity < 10) {
+                    clearInterval(fadeEffect);
+                } else {
+                    fadeTarget.style.opacity -= 10;
+                }
+            } 10000
+        }
+
+        document.getElementById('Exit').addEventListener('click', fadeOutEffect())
+    </script>
+</body>
+</html>
